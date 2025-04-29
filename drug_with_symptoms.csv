@@ -1,0 +1,11 @@
+Age,Sex,BP,Cholesterol,Na_to_K,Symptoms,Drug
+25,F,NORMAL,NORMAL,15.0,"fever, headache",Paracetamol
+30,M,HIGH,HIGH,12.5,"body pain, swelling",Ibuprofen
+35,F,NORMAL,LOW,18.0,"sore throat, cough",Azithromycin
+40,M,NORMAL,NORMAL,14.0,"stomach pain, acidity",Omeprazole
+28,F,LOW,NORMAL,11.5,"skin infection, redness",Clindamycin
+...,,,,,,
+25,M,NORMAL,NORMAL,12.0,"40,M,NORMAL,NORMAL,14.0,""stomach pain, acidity",Omeprazole
+25,M,NORMAL,NORMAL,12.0,"40,M,NORMAL,NORMAL,14.0,""stomach pain, acidity",Omeprazole
+25,M,NORMAL,NORMAL,12.0,"40,M,NORMAL,NORMAL,14.0,""stomach pain, acidity",Omeprazole
+25,M,NORMAL,NORMAL,12.0,"40,M,NORMAL,NORMAL,14.0,""stomach pain, acidity",Omeprazole
