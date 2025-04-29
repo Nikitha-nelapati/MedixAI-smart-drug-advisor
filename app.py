@@ -8,7 +8,7 @@ model = joblib.load('drug_symptom_model.pkl')
 tfidf = joblib.load('tfidf_vectorizer.pkl')
 
 # Streamlit page configuration
-st.set_page_config(page_title="AI Drug Recommendation", page_icon="💊", layout="centered")
+st.set_page_config(page_title="MedixAi-smart-drug-advisor", page_icon="💊", layout="centered")
 
 # Custom CSS for styling
 st.markdown(
@@ -31,7 +31,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title('💊 AI Drug Recommendation System')
+st.title('MedixAi-smart-drug-advisor')
 
 # User input for symptoms
 symptoms_input = st.text_area('Enter Symptoms (comma separated)', '')
@@ -45,7 +45,7 @@ if st.button('Recommend Drug'):
         # Predict the drug
         predicted_drug = model.predict(symptoms_vector)
 
-        st.success(f'🏥 Recommended Drug: {predicted_drug[0]}')
+        st.success(f' Recommended Drug: {predicted_drug[0]}')
 
         # PDF Report
         pdf = FPDF()
@@ -68,7 +68,7 @@ if st.button('Recommend Drug'):
                 mime="application/octet-stream"
             )
 
-        st.info("✅ Patient data saved to the dataset (drug_with_symptoms.csv)")
+        st.info("Patient data saved to the dataset (drug_with_symptoms.csv)")
 
         # Save the new data to CSV
         new_data = {
